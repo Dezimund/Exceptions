@@ -9,7 +9,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        
+        try {
+            System.out.println("Input number x.x");
+            double a = Double.parseDouble(READER.readLine());
+        }catch (NumberFormatException e){
+            System.out.println("Warning :" + e);
+        }
 
     }
 }
